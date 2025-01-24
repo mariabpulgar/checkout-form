@@ -84,11 +84,25 @@
                     <img src="./assets/edit-icon.svg">    
                 </div> 
                 <div class="form-body">
-                    <div class="radio">  
-                        <label for="domicilio">Entrega a Domicilio<input type="radio" id="domicilio" name="despacho" value="domicilio"></label>
-                        <label for="recoger">Recoger en Tienda<input type="radio" id="recoger" name="despacho" value="recoger"></label>
+
+                    <div class="radio-field">  
+                        <input type="radio" class="radio" id="home" name="delivery" value="home" checked>
+                        <label for="home">Entrega a domicilio</label>
+                        <input type="radio" class="radio" id="store" name="delivery" value="store">
+                        <label for="store">Recoger en tienda</label>
                     </div>
                     
+                    <!-- <div class="delivery-card">
+                        <label for="full-name">Dirección:</label>
+                        <input 
+                            type="text" 
+                            id="address" 
+                            name="address" 
+                            placeholder="Calle 28 # 6034" 
+                            required>
+                    </div> -->
+
+
                 </div>
 
             </div>
