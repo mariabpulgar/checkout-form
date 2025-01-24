@@ -147,10 +147,10 @@ input, label, button {
     width: 100%;
 }
 
-input, button {
+input, button, select {
     height: 44px;
     margin-bottom: 19px;
-    padding: 13.5px 15px;
+    padding-left: 15px;
     border: 1px solid var(--gris);
     border-radius: 5px;
 }
@@ -159,6 +159,7 @@ label {
     font-weight: 500;
     margin-bottom: 5px;
     height: 44px;
+    width: 100%;
 }
 
 button {
@@ -167,9 +168,12 @@ button {
     font-size: var(--medium);
 }
 
+
+
 .radio-field {
     margin-top: 30px;
     height: 44px;
+    width: 620px;
     border: 1px solid var(--gris);
     border-radius: 5px;
     display: flex;
@@ -178,12 +182,41 @@ button {
     color: var(--gris-texto);
     overflow: hidden;
 }
-input[type="radio"] {
-    display: none;
+
+.radio-field label {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-grow: 1; 
+    height: 100%;
+    background-color: var(--blanco); 
+    color: var(--gris-texto); 
+    margin-bottom: 0;
 }
 
-.radio-field .radio:checked + label {
-    width: 240px;
-    background-color: var(--negro);
-    color: var(--blanco);
+.radio-field input[type="radio"] {
+    display: none; 
+}
+
+.radio-field input[type="radio"]:checked + label {
+    width: 240px; 
+    background-color: var(--negro); 
+    color: var(--blanco); 
+}
+
+.radio-field label:not(:checked) {
+    flex-grow: 1;
+}
+
+.half-width-label-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+}
+
+.half-width-label {
+    display: flex;
+    flex-direction: column;
+    width: 300.5px;
 }

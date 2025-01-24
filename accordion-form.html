@@ -87,21 +87,67 @@
 
                     <div class="radio-field">  
                         <input type="radio" class="radio" id="home" name="delivery" value="home" checked>
-                        <label for="home">Entrega a domicilio</label>
+                        <label for="home" class="label-radio">Entrega a domicilio</label>
                         <input type="radio" class="radio" id="store" name="delivery" value="store">
-                        <label for="store">Recoger en tienda</label>
+                        <label for="store" class="label-radio">Recoger en tienda</label>
                     </div>
                     
-                    <!-- <div class="delivery-card">
-                        <label for="full-name">Dirección:</label>
-                        <input 
-                            type="text" 
-                            id="address" 
-                            name="address" 
-                            placeholder="Calle 28 # 6034" 
-                            required>
-                    </div> -->
+                    <div class="delivery-card">
+        
+                        <div>
+                            <label for="full-name">Dirección:</label>
+                            <input 
+                                type="text" 
+                                id="address" 
+                                name="address" 
+                                placeholder="Calle 28 # 6034" 
+                                required>
+                        </div>
 
+                        <div class="half-width-label-container">
+                            <div class="half-width-label">
+                                <label for="country">País</label>
+                                <select id="country" name="country" class="select-input">
+                                    <option value="colombia">Colombia</option>
+                                    <option value="ecuador">Ecuador</option>
+                                    <option value="peru">Perú</option>
+                                </select>
+                            </div>
+
+                            <div class="half-width-label">
+                                <label for="city">Ciudad</label>
+                                <select id="city" name="city" class="select-input">
+                                    <option value="bogota">Bogotá</option>
+                                    <option value="quito">Quito</option>
+                                    <option value="lima">Lima</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="half-width-label-container">
+                            <div class="half-width-label">
+                                <label for="zip-code">Codigo Postal</label>
+                                <input type="number" id="zip-code" name="zip-code" placeholder="22079" >
+                            </div>
+                            <div class="half-width-label">
+                                <label for="address2">Información Adicional</label>
+                                <input type="text" id="address2" name="address2" placeholder="Suite B" >
+                            </div>
+                        </div>
+                        
+                        <button>Ir a pago</button>
+                    </div>
+
+                    <div class="pickup-card">
+                        <div class="half-width-label-container">
+
+                        </div>
+
+
+                    </div>
+
+                      
 
                 </div>
 
