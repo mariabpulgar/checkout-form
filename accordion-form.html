@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animtated Accordion Form</title>
+    <link rel="stylesheet" href="form-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Información de Compra</h1>
+
+        <div class="stepper-container">
+            <div class="stepper">
+                <div class="step">
+                    <div class="step-circle">
+                        <img src="./assets/user-icon.svg" class="user-icon">
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="step">
+                    <div class="step-circle">
+                        <img src="./assets/shopping_bag.svg" class="shopping-bag-icon">
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="step">
+                    <div class="step-circle">
+                        <img src="./assets/currency-icon.svg" class="currency-icon">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <form>
+            <div class="form-field">
+                <div class="form-field-title">
+                    <div class="field-number">
+                        <div class="number">1</div>
+                        <div>Datos Personales</div>
+                    </div>
+                    <img src="./assets/edit-icon.svg">    
+                </div> 
+                <div class="form-body">
+                    <p class="p-form">Recopilamos únicamente los datos imprescindibles para procesar tu compra de manera eficiente.</p>
+                    <label for="full-name">Nombre Completo:</label>
+                    <input 
+                        type="text" 
+                        id="full-name" 
+                        name="full-name" 
+                        placeholder="nombre apellido" 
+                        required>
+                    
+                    <label for="email">Correo Electrónico:</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="micorreo@dominio.com" 
+                        required>
+                    <label for="phone">Número de Teléfono:</label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="1234567890" 
+                        required>
+                    <button>Ir a envío</button>     
+                </div>
+                
+            </div>
+
+            <div class="form-field">
+                <div class="form-field-title">
+                    <div class="field-number">
+                        <div class="number">2</div>
+                        <div>Datos de Envío</div>
+                    </div>
+                    <img src="./assets/edit-icon.svg">    
+                </div> 
+                <div class="form-body">
+                    <div class="radio">  
+                        <label for="domicilio">Entrega a Domicilio<input type="radio" id="domicilio" name="despacho" value="domicilio"></label>
+                        <label for="recoger">Recoger en Tienda<input type="radio" id="recoger" name="despacho" value="recoger"></label>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+            
+            
+
+            <div class="form-field-title">
+                <div class="field-number">
+                    <div class="number">3</div>
+                    <div>Datos de Pago</div>
+                </div>
+                <img src="./assets/edit-icon.svg">    
+            </div>  
+        </form>
+    </div>
+    
+</body>
+</html>

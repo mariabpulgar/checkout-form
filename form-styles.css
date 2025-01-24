@@ -1,0 +1,171 @@
+:root {
+    --azul: #474FCD;
+    --hueso: #FFFEFA;
+    --gris-tenue: #F7F6F2;
+    --negro: #2F2F2F;
+    --verde: #0C8A4B;
+    --azul-2: #5258B2;
+    --gris: #C3C3C3;
+    --rojo: #D83838;
+    --gris-texto: #747474;
+    --fondo: #787EDA;
+    --blanco: #ffffff;
+    --large: 32px;
+    --medium: 20px;
+    --regular: 14px;
+    --small: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f9f9f9;
+    font-family: "Lato", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.container {
+    margin-top: 40px;
+    width: 700px;
+    place-items: center;
+}
+
+.stepper-container{
+    width: 100%;
+    margin-top: 40px;
+    height: 70px;
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: center;
+}
+.stepper {
+    width: 480px;
+    height: 70px;
+    display: flex;
+
+}
+.step {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.step-circle{
+    width: 30px;
+    height: 30px;
+    background-color: var(--gris);
+    border: 1px solid var(--blanco);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-icon {
+    width: 15px;
+    height: 17px;
+    
+}
+
+.shopping-bag-icon, .currency-icon {
+    width: 20px;
+    height: 20px;
+    
+}
+
+.line {
+    width: 169px;
+    height: 2px;
+    background-color: var(--gris-tenue);
+    margin-left: auto;
+}
+
+form {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-field{
+    background-color: var(--blanco);
+    padding: 40px;
+    margin-bottom: 18px;
+}
+.form-field-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+
+.field-number {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.number{
+    width: 20px;
+    height: 20px;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-size: var(--small);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.p-form {
+    color: var(--gris-texto);
+    font-size: var(--regular);
+    height: 34px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+input, label, button {
+    display: block;
+    width: 100%;
+}
+
+input, button {
+    height: 44px;
+    margin-bottom: 19px;
+    padding: 13.5px 15px;
+    border: 1px solid var(--gris);
+    border-radius: 5px;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: var(--azul);
+    color: var(--blanco);
+    font-size: var(--medium);
+}
+
+input[type="radio"] {
+    appearance: none;
+}
