@@ -44,9 +44,9 @@
                         <div class="number">1</div>
                         <div>Datos Personales</div>
                     </div>
-                    <img src="./assets/edit-icon.svg">    
+                    <img src="./assets/edit-icon.svg" style="display: block;">    
                 </div> 
-                <div class="form-body">
+                <div class="form-body hidden">
                     <p class="p-form">Recopilamos únicamente los datos imprescindibles para procesar tu compra de manera eficiente.</p>
                     <label for="full-name">Nombre Completo:</label>
                     <input 
@@ -81,9 +81,9 @@
                         <div class="number">2</div>
                         <div>Datos de Envío</div>
                     </div>
-                    <img src="./assets/edit-icon.svg">    
+                    <img src="./assets/edit-icon.svg" style="display: block;">    
                 </div> 
-                <div class="form-body">
+                <div class="form-body hidden">
 
                     <div class="radio-field">  
                         <input type="radio" class="radio" id="home" name="delivery" value="home" checked>
@@ -174,16 +174,17 @@
                         <div class="number">3</div>
                         <div>Datos de Pago</div>
                     </div>
-                    <img src="./assets/edit-icon.svg">    
+                    <img src="./assets/edit-icon.svg" style="display: block;">    
                 </div> 
-                <div class="radio-field">
-                    <input type="radio" class="radio" id="credito" name="payment" value="credito" checked>
-                    <label for="credito" class="label-radio">Tarjeta de crédito</label>
                 
-                    <input type="radio" class="radio" id="debito" name="payment" value="debito">
-                    <label for="debito" class="label-radio">Tarjeta de débito</label>
-                </div>
-                <div class="form-body">
+                <div class="form-body hidden">
+                    <div class="radio-field">
+                        <input type="radio" class="radio" id="credito" name="payment" value="credito" checked>
+                        <label for="credito" class="label-radio">Tarjeta de crédito</label>
+                    
+                        <input type="radio" class="radio" id="debito" name="payment" value="debito">
+                        <label for="debito" class="label-radio">Tarjeta de débito</label>
+                    </div>
                     <label for="titular">Nombre del titular:</label>
                     <input 
                         type="text" 
@@ -213,6 +214,6 @@
             </div>  
         </form>
     </div>
-    
+    <script src="main.js"></script>
 </body>
 </html>

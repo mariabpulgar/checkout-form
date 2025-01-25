@@ -32,7 +32,9 @@ body{
 }
 
 h1 {
-    font-weight: 900;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
 }
 
 .container {
@@ -111,6 +113,13 @@ form {
     
     
 }
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
 
 .field-number {
     display: flex;
@@ -119,12 +128,13 @@ form {
     align-items: center;
     font-weight: 700;
     font-style: normal;
+    color: var(--gris-texto);
 }
 
 .number{
     width: 20px;
     height: 20px;
-    background-color: var(--negro);
+    background-color: var(--gris-texto);
     color: var(--blanco);
     font-size: var(--small);
     border-radius: 50%;
