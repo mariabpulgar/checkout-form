@@ -12,6 +12,7 @@
     --blanco: #ffffff;
     --large: 32px;
     --medium: 20px;
+    --regular-l: 16px;
     --regular: 14px;
     --small: 12px;
 }
@@ -137,7 +138,6 @@ form {
 .p-form {
     color: var(--gris-texto);
     font-size: var(--regular);
-    height: 34px;
     margin-top: 14px;
     margin-bottom: 30px;
 }
@@ -158,7 +158,6 @@ input, button, select {
 label {
     font-weight: 500;
     margin-bottom: 5px;
-    height: 44px;
     width: 100%;
 }
 
@@ -166,20 +165,16 @@ button {
     background-color: var(--azul);
     color: var(--blanco);
     font-size: var(--medium);
+    margin-top: 30px;
 }
-
-
 
 .radio-field {
     margin-top: 30px;
     height: 44px;
-    width: 620px;
+    width: 620px; 
     border: 1px solid var(--gris);
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: var(--gris-texto);
+    display: flex; 
     overflow: hidden;
 }
 
@@ -187,26 +182,31 @@ button {
     display: flex;
     align-items: center; 
     justify-content: center; 
-    flex-grow: 1; 
     height: 100%;
-    background-color: var(--blanco); 
-    color: var(--gris-texto); 
-    margin-bottom: 0;
+    flex-grow: 1;
+    background-color: var(--blanco);
+    color: var(--gris-texto);
+    
 }
 
 .radio-field input[type="radio"] {
     display: none; 
 }
 
+
 .radio-field input[type="radio"]:checked + label {
     width: 240px; 
-    background-color: var(--negro); 
-    color: var(--blanco); 
+    background-color: var(--negro);
+    color: var(--blanco);
+    flex-grow: 0;
 }
 
-.radio-field label:not(:checked) {
-    flex-grow: 1;
+
+.radio-field input[type="radio"]:not(:checked) + label {
+    flex-grow: 1; 
+    width: auto; 
 }
+
 
 .half-width-label-container{
     display: flex;
@@ -219,4 +219,26 @@ button {
     display: flex;
     flex-direction: column;
     width: 300.5px;
+}
+
+.opcion-recogida {
+    width: 300px;
+    height: 91px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13.5px;
+    padding-left: 20px;
+    border: 1px solid var(--gris);
+    border-radius: 5px;
+}
+
+.pickup-title {
+    font-size: var(--regular-l);
+    font-weight: 500;
+}
+
+.pickup-details {
+    font-size: var(--small);
+    color: var(--gris-texto);
 }
