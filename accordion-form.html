@@ -46,7 +46,7 @@
                     </div>
                     <img src="./assets/edit-icon.svg" style="display: block;">    
                 </div> 
-                <div class="form-body hidden">
+                <div class="form-body form-body-1 hidden">
                     <p class="p-form">Recopilamos únicamente los datos imprescindibles para procesar tu compra de manera eficiente.</p>
                     <label for="full-name">Nombre Completo:</label>
                     <input 
@@ -70,7 +70,7 @@
                         name="phone" 
                         placeholder="1234567890" 
                         required>
-                    <button>Ir a envío</button>     
+                    <button id="btn-envio">Ir a envío</button>     
                 </div>
                 
             </div>
@@ -83,7 +83,7 @@
                     </div>
                     <img src="./assets/edit-icon.svg" style="display: block;">    
                 </div> 
-                <div class="form-body hidden">
+                <div class="form-body form-body-2 hidden">
 
                     <div class="radio-field">  
                         <input type="radio" class="radio" id="home" name="delivery" value="home" checked>
@@ -136,7 +136,6 @@
                             </div>
                         </div>
                         
-                        <button>Ir a pago</button>
                     </div>
 
                     <div class="pickup-card hidden">
@@ -159,8 +158,8 @@
                             </div>
                             
                         </div>
-                        <button>Ir a pago</button>
                     </div>
+                    <button id="btn-pago">Ir a pago</button>
 
 
 
@@ -177,7 +176,7 @@
                     <img src="./assets/edit-icon.svg" style="display: block;">    
                 </div> 
                 
-                <div class="form-body hidden">
+                <div class="form-body form-body-3 hidden">
                     <div class="radio-field">
                         <input type="radio" class="radio" id="credito" name="payment" value="credito" checked>
                         <label for="credito" class="label-radio">Tarjeta de crédito</label>
@@ -209,7 +208,7 @@
                             <input type="number" id="cvc" name="cvc" placeholder="123" >
                         </div>
                     </div>
-                    <button>Finalizar</button>
+                    <button id="btn-finalizar">Finalizar</button>
                 </div>
                 
             </div>  
