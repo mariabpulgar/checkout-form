@@ -113,13 +113,27 @@ form {
     
     
 }
-.hidden {
+
+.form-body {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease-out,
+                opacity 0.3s ease-out,
+                
+}
+
+.form-body.active{
+    max-height: 600px;
+    opacity: 1;
+}
+/* .hidden {
     display: none;
 }
 
 .active {
     display: block;
-}
+} */
 
 .field-number {
     display: flex;
