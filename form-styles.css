@@ -8,6 +8,7 @@
     --gris: #C3C3C3;
     --rojo: #D83838;
     --gris-texto: #747474;
+    --Lila-tenue: #f1f2ff;                /* Color nuevo*/
     --fondo: #787EDA;
     --blanco: #ffffff;
     --large: 32px;
@@ -116,16 +117,17 @@ form {
     background-color: var(--blanco);
     padding: 40px;
     margin-bottom: 18px;
+    transition: all 0.3s ease-in-out; /* Transición suave */
+
 }
 
-.form-field {
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-}
-
+/* Hover en los acordeones */
 .form-field:hover {
-    transform: scale(1.03);
+    background-color: var(--Lila-tenue); /* Cambia el fondo al pasar el mouse */
+    transform: scale(1.05); /* Escala ligeramente el acordeón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil */
 }
+
 
 .form-field-title {
     display: flex;
