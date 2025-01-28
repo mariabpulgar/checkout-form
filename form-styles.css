@@ -8,8 +8,7 @@
     --gris: #C3C3C3;
     --rojo: #D83838;
     --gris-texto: #747474;
-    --Lila-tenue: #f1f2ff;                /* Color nuevo*/
-    --fondo: #787EDA;
+    --Lila-tenue: #f1f2ff;             
     --blanco: #ffffff;
     --large: 32px;
     --medium: 20px;
@@ -121,11 +120,10 @@ form {
 
 }
 
-/* Hover en los acordeones */
 .form-field:hover {
-    background-color: var(--Lila-tenue); /* Cambia el fondo al pasar el mouse */
-    transform: scale(1.05); /* Escala ligeramente el acordeón */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil */
+    background-color: var(--Lila-tenue); 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 
@@ -311,4 +309,18 @@ button {
 .pickup-details {
     font-size: var(--small);
     color: var(--gris-texto);
+}
+
+.tarjeta-credito,
+.tarjeta-debito {
+    max-height: 0; 
+    overflow: hidden; 
+    opacity: 0; 
+    transition: max-height 0.5s ease, opacity 0.5s ease; 
+}
+
+.tarjeta-credito.active,
+.tarjeta-debito.active {
+    max-height: 500px; 
+    opacity: 1; 
 }
