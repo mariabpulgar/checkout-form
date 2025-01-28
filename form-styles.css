@@ -247,14 +247,15 @@ button {
 
 .radio-field label {
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     height: 100%;
     flex-grow: 1;
     background-color: var(--blanco);
     color: var(--gris-texto);
-    
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
+
 
 .radio-field input[type="radio"] {
     display: none; 
@@ -266,12 +267,14 @@ button {
     background-color: var(--negro);
     color: var(--blanco);
     flex-grow: 0;
+    transform: scale(1.1); 
 }
 
 
 .radio-field input[type="radio"]:not(:checked) + label {
     flex-grow: 1; 
     width: auto; 
+    transform: scale(1);
 }
 
 
